@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<style>
+.MenuBar {
+list-style-type: none;
+margin: 0;
+overflow: hidden;
+list-style: none;
+padding: 0;
+position: fixed;
+height: auto;
+margin-top: 0px;
+border-top: 0px;
+padding-top: 0px;
+z-index: 2;
+}
+.ItemVar {
+float: left;
+display: inline;
+}
+.linkstyle {
+display: block;
+color: white;
+text-align: center;
+vertical-align: 60%;
+font-family: "Trebuchet MS";
+font-size: 30px;
+display: inline;
+padding: 20px 20px;
+background-color: #4F5ABF;
+text-decoration: none;
+transition: background-color .7s, opacity .6s, color .6s, font-size .6s;
+-moz-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-webkit-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-o-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+opacity: 100%;
+transition-timing-function: linear;
+}
+
+.linkstyle:hover {
+transition-timing-function: linear;
+background-color: rgba(255,255,255,0.5);
+opacity: 30%;
+color: black;
+transition: background-color .5s, opacity .4s, color: .4s, font-size .4s;
+-moz-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-webkit-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-o-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+font-size: 35px;
+}
+.MainWrapper {
+margin-top: 100px;
+}
+body {
+text-align: center;
+border: 0px;
+padding: 0px;
+margin: 0px;
+}
+.head {
+font-size: 45px;
+text-align: center;
+}
+.source {
+font-size: 10px;
+font-family: "TimesNewRoman";
+font-color: black;
+text-decoration: none;
+}
+.content {
+margin-top: 38px;
+margin-bottom: 35px;
+padding: 30px;
+background-color: #F9FAFF;
+font-family: "Trebuchet MS";
+font-size: 35px
+text-align: center;
+}
+.content2 {
+overflow: hidden;
+margin-top: 38px;
+margin-bottom: 35px;
+padding: 30px;
+background-color: #F9FAFF;
+font-family: "Trebuchet MS";
+font-size: 24px;
+text-align: center;
+}
+.define {
+margin-top: 100px;
+}
+.facts {
+list-style: none;
+font-size: 24px;
+}
+.write {
+padding-left: 50px
+}
+.parimg1 {
+overflow: hidden;
+background-image: url("back.jpg");
+height: 600px;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+.parimg2:hover {
+background-size: 110%;
+transition: background-size 1s, filter 1s;
+-webkit-transition: background-size 1s, filter 1s;
+-moz-transition: background-size 1s, filter 1s;
+transition-delay: .2s;
+filter: blur(0px);
+}
+.parimg3:hover {
+background-size: 110%;
+transition: background-size 1s, filter 1s;
+-webkit-transition: background-size 1s, filter 1s;
+-moz-transition: background-size 1s, filter 1s;
+transition-delay: .2s;
+filter: blur(0px);
+}
+.parimg2 {
+overflow: hidden;
+background-image: url("china.jpg");
+height: 600px;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100%;
+transition: background-size 1s, filter 1s;
+-webkit-transition: background-size 1s, filter 1s;
+-moz-transition: background-size 1s, filter 1s;
+filter: blur(5px);
+}
+.parimg3 {
+overflow: hidden;
+background-image: url("dam.jpg");
+height: 600px;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100%;
+transition: background-size 1s, filter 1s;
+-webkit-transition: background-size 1s, filter 1s;
+-moz-transition: background-size 1s, filter 1s;
+filter: blur(5px);
+}
+.active {
+display: block;
+color: white;
+text-align: center;
+vertical-align: 60%;
+font-family: "Trebuchet MS";
+font-size: 30px;
+display: inline;
+padding: 20px 20px;
+background-color: #29c656;
+text-decoration: none;
+transition: background-color .7s, opacity .6s, color .6s, font-size .6s;
+-moz-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-webkit-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-o-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+opacity: 100%;
+transition-timing-function: linear;
+}
+.active:hover {
+transition-timing-function: linear;
+background-color: rgba(255,255,255,0.5);
+opacity: 30%;
+color: black;
+transition: background-color .5s, opacity .4s, color: .4s, font-size .4s;
+-moz-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-webkit-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-o-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+font-size: 35px;
+}
+.inimgtxt {
+padding: 250px;
+color: white;
+font-family: "Trebuchet MS";
+font-size: 100px;
+text-align: center;
+margin-top: 0;
+}
+.facts li {
+padding-top: 13px;
+font-size: 18px;
+}
+.con2 .content p {
+font-size: 22px;
+}
+.con3 .content p {
+font-size: 22px;
+}
+.dontmove {
+margin-right: 0px;
+border-right: 0px;
+padding-right: 0px;
+margin-left: 0px;
+border-left: 0px;
+padding-left: 0px;
+}
+</style>
+<html>
+<title>Background</title>
+<body>
+<section class="MenuBar">
+	<ul class="dontmove">
+		<li class="ItemVar"><a href= "Home.html" class="linkstyle">Home</a></li>
+		<li class="ItemVar"><a href= "Background.html" class="active">Background</a></li>
+		<li class="ItemVar"><a href= "Story.html" class="linkstyle">Story</a></li>
+		<li class="ItemVar"><a href= "Ethical.html" class="linkstyle">Ethical Mandate</a></li>
+		<li class="ItemVar"><a href= "Interview.html" class=linkstyle>Interview</a></li>
+		
+	</ul>
+</section>
+<section class="parimg1">
+	<div>
+		<p class="inimgtxt">Background</p>
+	</div>
+</section>
+<section class="con2">
+	<div class="content">
+		<h1 class="head"><b>Definition of Water Pollution</b></h1>
+		<p>Water pollution is defined as any contamination of water with chemicals or other foreign substances that</p>
+		<p>are detrimental to human, plant, or animal health. These pollutants include fertilizers and pesticides from</p>
+		<p>agricultural runoff; sewage and food processing waste; lead, mercury, and other heavy metals; chemical</p>
+		<p>wastes from industrial discharges; and chemical contamination from hazardous waste sites.</p>
+		<a class="source" href="https://www.niehs.nih.gov/health/topics/agents/water-poll/">National Institute of Enviormental Health Sciences</a>
+	</div>
+</section>
+<section class="parimg2">
+</section>
+<section class="con1">
+	<div class="content2">
+		<h1 class="head"><b>10 Facts on Water Pollution</b></h1>
+		<ul class="facts">
+			<li>1. Every day, 2 million tons of human waste are disposed of in water courses.</li>
+			<li>2. Up to 90 % of wastewater in developing countries flows untreated into water bodies</li>
+			<li>3. Over 80% of wastewater is not collected or treated worldwide</li>
+			<li>4. The food sector is responsible for about half of the production of organic water pollutants</li>
+			<li>5. Worldwide, nearly 2 billion people drink contaminated water that could be harmful to their health.</li>
+			<li>6. The UN estimates that the amount of wastewater produced annually is about 1,500 km3 , six times more water than exists in all the rivers of the world.</li>
+			<li>7. Worldwide, infectious diseases such as waterborne diseases are the number one killer of children under five years old and more people die from unsafe water annually than from all forms of violence, including war. </li>
+			<li>8. The naturally occurring arsenic pollution in groundwater now affects nearly 140 million people in 70 countries on all continents.</li>
+			<li>9. Nearly 70 million people living in Bangladesh are exposed to groundwater contaminated with arsenic beyond WHO recommended limits of 10 ug/L.</li>
+			<li>10. Even drinking water quality in developed countries is not assured. In France, drinking water testing uncovered that 3 million people were drinking water whose quality did not meet WHO standards, and 97% of groundwater samples did not meet standards for nitrate in the same study.</li>
+		</ul>
+		<p class="source">1,2,3,4 <a href="http://www.unwater.org/statistics/en/?page=5&ipp=10&tx_dynalist_pi1%5Bpar%5D=YToxOntzOjE6IkwiO3M6MDoiIjt9" class="source">"Statistics." UN-Water: Statistics. United Nations, 7 Oct. 2014. Web. 15 Mar. 2017.</a></p>
+		<p class="source">5 <a href="https://www.niehs.nih.gov/health/topics/agents/water-poll/" class="source"> "Water Pollution." National Institutes of Health. U.S. Department of Health and Human Services, 6 Feb. 2017. Web. 15 Mar. 2017.</a></p>
+		<p class="source">6,7,8,9,10 <a href="http://pacinst.org/app/uploads/2013/02/water_quality_facts_and_stats3.pdf">pacinst.org</a></p>
+
+	</div>
+</section>
+<section class="parimg3">
+</section>
+<section class="con3">
+	<div class="content">
+		<h1 class="head">History of Water Pollution Prevention in the United States</h1>
+		<p>The Federal Water Pollution Control Act of 1948 was the first major peice of legislation to fight water pollution in the United States.</p>
+		<p>It established the basic structure for regulating pollutant discharges into the waters of the United States.</p>
+		<p>The act gave the EPA the authority to implement pollution control programs such as setting wastewater standards for the industry.</p>
+		<p>It made requirments that set water quality standards for all contaminants in surface waters.</p>
+		<p>In adition, It made it unlawful for any person to discharge any pollutant from a point source into navigable waters, unless a permit was obtained.</p>
+		<p>It funded construction of sewage treatment plants under the construction grants program.</p>
+		<p>Recognized the need for planning to address the critical problems psoed by nonpoint source pollution.</p>
+		<p>In 1972, the act was updated under the Federal Water Pollution Control Act Admendments of 1982.</p>
+		<p>Since then, the Clean Water Act of 1977 and Water Quality Act of 1987 have added on to, and revised the original legislation</p>
+		<p>In addition to legislation, the EPA runs the WaterSense program which encourages the use of efficent and clean techniques involving water</p>
+	</div>
+</section>
+<!--
+These animals dont listen
+No not one little bit
+they run around out control and throw their hissy fits
+Its u to me to stop them cause plainly you can see
+Its got to be my destiny
+Cause its what my cutie mark is telling me
+-->
+</body>
+</html>

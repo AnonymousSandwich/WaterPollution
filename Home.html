@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<style>
+.MenuBar {
+list-style-type: none;
+margin: 0;
+overflow: hidden;
+list-style: none;
+padding: 0;
+position: fixed;
+height: auto;
+margin-top: 0px;
+border-top: 0px;
+padding-top: 0px;
+z-index: 2;
+}
+.ItemVar {
+float: left;
+display: inline;
+}
+.linkstyle {
+display: block;
+color: white;
+text-align: center;
+vertical-align: 60%;
+font-family: "Trebuchet MS";
+font-size: 30px;
+display: inline;
+padding: 20px 20px;
+background-color: #4F5ABF;
+text-decoration: none;
+transition: background-color .7s, opacity .6s, color .6s, font-size .6s;
+-moz-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-webkit-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-o-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+opacity: 100%;
+transition-timing-function: linear;
+}
+
+.linkstyle:hover {
+transition-timing-function: linear;
+background-color: rgba(255,255,255,0.5);
+opacity: 30%;
+color: black;
+transition: background-color .5s, opacity .4s, color: .4s, font-size .4s;
+-moz-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-webkit-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-o-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+font-size: 35px;
+}
+.MainWrapper {
+margin-top: 100px;
+}
+body {
+border: 0px;
+padding: 0px;
+margin: 0px;
+}
+.active {
+display: block;
+color: white;
+text-align: center;
+vertical-align: 60%;
+font-family: "Trebuchet MS";
+font-size: 30px;
+display: inline;
+padding: 20px 20px;
+background-color: #29c656;
+text-decoration: none;
+transition: background-color .7s, opacity .6s, color .6s, font-size .6s;
+-moz-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-webkit-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-o-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+opacity: 100%;
+transition-timing-function: linear;
+}
+.active:hover {
+transition-timing-function: linear;
+background-color: rgba(255,255,255,0.5);
+opacity: 30%;
+color: black;
+transition: background-color .5s, opacity .4s, color: .4s, font-size .4s;
+-moz-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-webkit-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-o-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+font-size: 35px;
+}
+.dontmove {
+margin-right: 0px;
+border-right: 0px;
+padding-right: 0px;
+margin-left: 0px;
+border-left: 0px;
+padding-left: 0px;
+}
+.img1 {
+background-image: url("back.jpg");
+height: 3000px;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+.inimgtext {
+padding-top: 250px;
+color: white;
+font-family: "Trebuchet MS";
+font-size: 100px;
+text-align: center;
+margin-top:0;
+}
+.about {
+background-color: black;
+margin-top: 20px;
+margin-bottom: 20px;
+height: 1700px;
+margin-bottom: 20px;
+padding-top: 60px;
+}
+.charlie {
+margin-top: 60px;
+background-color: rgba(255,255,255,0.7);
+height: 650px;
+margin-left: 200px;
+margin-right: 200px;
+transition: background-color 1.5s;
+}
+.charlie:hover {
+background-color: rgba(255,255,255,0.9);
+transition-delay: 1s;
+transition: background-color 1.5s;
+}
+.jack {
+margin-top: 350px;
+background-color: rgba(255,255,255,0.7);
+height: 700px;
+margin-left: 200px;
+margin-right: 200px;
+transition: background-color 1.5s;
+}
+.jack:hover {
+background-color: rgba(255,255,255,0.9);
+transition-delay: 1s;
+transition: background-color 1.5s;
+}
+.andrew {
+margin-top: 60px;
+background-color: rgba(255,255,255,0.7);
+height: 750px;
+margin-left: 200px;
+margin-right: 200px;
+transition: background-color 1.5s;
+}
+.andrew:hover {
+background-color: rgba(255,255,255,0.9);
+transition-delay: 1s;
+transition: background-color 1.5s;
+}
+.Eimg {
+display: block;
+margin: auto;
+padding-top: 10px;
+width: 25%;
+height: auto;
+}
+.abouttxt {
+color:black;
+font-family: "Arial";
+font-size: 20px;
+text-align: center;
+}
+.name {
+text-align: center;
+color:black;
+font-size: 30px;
+font-family: "Arial";
+padding-top: 30px;
+}
+</style>
+<html>
+<title>Home</title>
+<body>
+<div class="MenuBar">
+	<ul class="dontmove">
+	<li class="ItemVar"><a href= "Home.html" class="active">Home</a></li>
+	<li class="ItemVar"><a href= "Background.html" class="linkstyle">Background</a></li>
+	<li class="ItemVar"><a href= "Story.html" class="linkstyle">Story</a></li>
+	<li class="ItemVar"><a href= "Ethical.html" class=linkstyle>Ethical Mandate</a></li>
+	<li class="ItemVar"><a href= "Interview.html" class=linkstyle>Interview</a></li>
+	<li class="ItemVar"><a href= "Solution.html" class=linkstyle>Solution</a></li>
+	</ul>
+</div>
+<section class="img1">
+	<p class="inimgtext">Home</p>
+	<div class="jack">
+		<h1 class=name>Jack Christensen</h1>
+		<img src="Jack.jpeg" class="Eimg"></img>
+		<div class=abouttxt>
+			<p>Jack Christensen is a senior at Serra High School. He is concerned with water quality because water is a </p>
+			<P>right that all people should have, and the lack of clean, safe water is a hazard for health. Water is a </p>
+			<p>neccessary part of life and the lack of it is one of the most dangerous outcomes that a population could have.</p>
+			<p>Water is pollution is hard to remove once added, and the spread of it can be very dangerous for life in many areas</p>
+		</div>
+	</div>
+	<div class="andrew">
+		<h1 class=name>Andrew Garcia</h1>
+		<img src="Andrew.jpg" class="Eimg"></img>
+		<div class=abouttxt>
+			<p>Andrew Garcia is a high school senior concerned with the rapid decay of water quality and the threat of</p>
+			<p>rising water levels due to climate change. As someone who has always grown up alongside a coast, the quality</p>
+			<p>of water and the effect it has on different ecosystems and estuaries has become a big concern. Its easy</p>
+			<p>to look at faraway instances of pollution and not care, but it is critical to remember that when these</p>
+			<p>issues crop up, it affects everybody, especially those of us living in an area like the Bay Area.</p>
+		</div>
+	</div>
+	<div class="charlie">
+		<h1 class=name>Charlie Dowden</h1>
+		<img src="charlie.jpg" class="Eimg"></img>
+		<div class=abouttxt>
+			<p>Charlie Dowden is a senior at Serra High School. He really likes Pete Townshend lyrics which is why he is</p>
+			<p>interested in this project. A significant amount of his songs are about water. Water is also a vital right</p>
+			<p>that all people should be able to reach.</p>
+		</div>	
+	</div>
+</section>
+</body>
+</html>

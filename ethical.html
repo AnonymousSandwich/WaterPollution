@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<style>
+.MenuBar {
+list-style-type: none;
+margin: 0;
+overflow: hidden;
+list-style: none;
+padding: 0;
+position: fixed;
+height: auto;
+margin-top: 0px;
+border-top: 0px;
+padding-top: 0px;
+z-index: 2;
+}
+.ItemVar {
+float: left;
+display: inline;
+}
+.linkstyle {
+display: block;
+color: white;
+text-align: center;
+vertical-align: 60%;
+font-family: "Trebuchet MS";
+font-size: 30px;
+display: inline;
+padding: 20px 20px;
+background-color: #4F5ABF;
+text-decoration: none;
+transition: background-color .7s, opacity .6s, color .6s, font-size .6s;
+-moz-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-webkit-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-o-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+opacity: 100%;
+transition-timing-function: linear;
+}
+.linkstyle:hover {
+transition-timing-function: linear;
+background-color: rgba(255,255,255,0.5);
+opacity: 30%;
+color: black;
+transition: background-color .5s, opacity .4s, color: .4s, font-size .4s;
+-moz-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-webkit-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-o-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+font-size: 35px;
+}
+.dontmove {
+margin-right: 0px;
+border-right: 0px;
+padding-right: 0px;
+margin-left: 0px;
+border-left: 0px;
+padding-left: 0px;
+}
+.active {
+display: block;
+color: white;
+text-align: center;
+vertical-align: 60%;
+font-family: "Trebuchet MS";
+font-size: 30px;
+display: inline;
+padding: 20px 20px;
+background-color: #29c656;
+text-decoration: none;
+transition: background-color .7s, opacity .6s, color .6s, font-size .6s;
+-moz-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-webkit-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+-o-transition: background-color .7s, opacity .6s, color: .6s, font-size .6s;
+opacity: 100%;
+transition-timing-function: linear;
+}
+.active:hover {
+transition-timing-function: linear;
+background-color: rgba(255,255,255,0.5);
+opacity: 30%;
+color: black;
+transition: background-color .5s, opacity .4s, color: .4s, font-size .4s;
+-moz-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-webkit-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+-o-transition: background-color .5s, opacity .4s, color .4s, font-size .4s;
+font-size: 35px;
+}
+.arg {
+text-align: center;
+font-size: 24px;
+font-family: "Trebuchet MS";
+margin-top: 38px;
+margin-bottom: 35px;
+padding: 30px;
+background-color: #F9FAFF;
+}
+.parimg1 {
+background-image: url("back.jpg");
+height: 600px;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+margin-right: 0px;
+margin-left: 0px;
+width: auto;
+}
+.inimgtext {
+padding-top: 250px;
+color: white;
+font-family: "Trebuchet MS";
+font-size: 100px;
+text-align: center;
+margin-top:0;
+}
+.dontmove {
+margin-right: 0px;
+border-right: 0px;
+padding-right: 0px;
+margin-left: 0px;
+border-left: 0px;
+padding-left: 0px;
+}
+.head {
+font-family: "Trebuchet MS";
+font-size: 45px;
+}
+.source {
+font-size: 10px;
+font-family: "TimesNewRoman";
+font-color: black;
+text-decoration: none;
+}
+.verse {
+margin-top: 38px;
+margin-bottom: 35px;
+background-color: #F9FAFF;
+text-align: center;
+font-family: "Trebuchet MS";
+font-size: 30px;
+}
+.smalldiv {
+background-image: url("back.jpg");
+height: 300px;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+margin-right: 0px;
+margin-left: 0px;
+width: auto;
+overflow: hidden;
+}
+.UN {
+overflow: hidden;
+vertical-align: top;
+margin-bottom: 35px;
+background-color: #F9FAFF;
+text-align: center;
+font-family: "Trebuchet MS";
+font-size: 20px;
+background-image: url("back.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+padding-bottom: 80px;
+
+}
+.inUN {
+margin-right: 100px;
+margin-left: 100px;
+background-color: #F9FAFF;
+padding-bottom: 25px;
+margin-bottom: 70px;
+}
+.body {
+	display: flex;
+	font-size: 0px;
+}
+body {
+border: 0px;
+padding: 0px;
+margin: 0px;
+}
+.phil {
+margin-right: 100px;
+margin-left: 100px;
+background-color: #F9FAFF;
+padding-bottom: 25px;
+padding-top: 15px;
+font-family: "Trebuchet MS";
+font-size: 20px;
+}
+.cst {
+margin-top: 70px;
+margin-right: 100px;
+margin-left: 100px;
+background-color: #F9FAFF;
+padding-bottom: 25px;
+padding-top: 15px;
+font-family: "Trebuchet MS";
+font-size: 20px;
+}
+</style>
+<html>
+<title>Ethical Mandate</title>
+<body>
+<div class="MenuBar">
+	<ul class="dontmove">
+	<li class="ItemVar"><a href= "Home.html" class="linkstyle">Home</a></li>
+	<li class="ItemVar"><a href= "Background.html" class="linkstyle">Background</a></li>
+	<li class="ItemVar"><a href= "Story.html" class="linkstyle">Story</a></li>
+	<li class="ItemVar"><a href= "Ethical.html" class="active">Ethical Mandate</a></li>
+	<li class="ItemVar"><a href= "Interview.html" class=linkstyle>Interview</a></li>
+	<li class="ItemVar"><a href= "Solution.html" class=linkstyle>Solution</a></li>
+	</ul>
+</div>
+<div class=parimg1>
+	<p class=inimgtext>Ethical Mandate</p>
+</div>
+<div class="arg">
+	<p class=head><b>Argument</b></p>
+	<p>If water pollution is destroying the lives of people who do not cause it, then an injustice is being committed against them.</p>
+	<p>Large companies cause water pollution by dumping their waste into water supplies making it undrinkable without being affected</p>
+	<p>by it. This is an injustice against the people who rely on that water.</p>
+</div>
+<div class=smalldiv>
+</div>
+<div class=verse>
+	<p class=quote><i>"And I brought you into a plentiful land to enjoy its fruits and its good things. But when you came in, you defiled</i><p>
+	<p class=quote><i>my land and made my heritage an abomination." -Jeremiah 2:7</i></p>
+</div>
+<div class=smalldiv>
+</div>
+<div class=UN>
+	<div class=inUN>
+		<p class=head><b>UN Articles</b></p>
+		<p class=head><b>Article 25</b></p>
+		<p><i>(1) Everyone has the right to a standard of living adequate for the health and well-being of himself and of his family, including food,</p>
+		<p>clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness,</p>
+		<p>disability, widowhood, old age or other lack of livelihood in circumstances beyond his control. (2) Motherhood and childhood are entitled</p>
+		<p>to special care and assistance. All children, whether born in or out of wedlock, shall enjoy the same social protection.</i></p>
+		<br>
+		<p>Water is the most essential component of life and the well being and health of a person or family cannot be guaranteed without water.</p>
+		<p>The availability of clean water is out of the average person's control because they rely on the environment and larger companies and</p>
+		<p>agencies to provide it for them.</p>
+		<br>
+		<p class=head><b>Article 2</b></p>
+		<p><i>Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race,</p>
+		<p>colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no</p>
+		<p>distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a</p>
+		<p>person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty.</i></p>
+		<br>
+		<p>Parts of the Declaration refer to the rights to quality of life, which would be affected by the ability to access clean water.</p>
+		<br>
+		<p class=head><b>Article 5</b></p>
+		<p><i>No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.</i></p>
+		<br>
+		<p>While the pollution of water is not necessarily torture, nor has as significant of an effect on people. It is cruel to those who</p>
+		<p>drink and/or live near or in it. It is not necessary nor beneficial.</p>
+		<br>
+		<p class=head><b>Article 7</b>
+		<p><i>All are equal before the law and are entitled without any discrimination to equal protection of the law. All are entitled to equal</p>
+		<p>protection against any discrimination in violation of this Declaration and against any incitement to such discrimination.</i></p>
+		<br>
+		<p>All people should have the shared right to safe water, to give one community safe water, and the other dirty water, the state is</p>
+		<p>not providing equal to protection to both communities.</p>
+	</div>
+	<div class=phil>
+		<p class=head></b>Philosipher</b></p>
+		<p>John Locke once argued that God had "given the world to man in common," and thus wanted man to make use of it best. Every man was</p>
+		<p>given the resources and had equal right to it, yet ownership rights were shifted once somebody altered or developed that resource.</p>
+		<p>In the case of large oil companies, one would imagine that by Locke's logic, the detrimental effects on water would be "owned" by</p>
+		<p>those companies, and they would feel the disadvantage of their development. However, those working in large oil companies are not the</p>
+		<p>ones negatively affected by the water, and in fact often benefit from these conditions. Therefore, the actions of these companies are</p>
+		<p>unequal and disrupt the responsibilities of resource ownership.</p>
+	</div>
+	<div class=cst>
+		<p class=head>Catholic Social Teaching</p>
+		<p>Catholic tradition insists that we show our respect for the Creator by our stewardship of creation. Care for the earth is not just</p>
+		<p>an Earth Day slogan, it is a requirement of our faith. We are called to protect people and the planet, living our faith in relationship</p>
+		<p>with all of God's creation. This environmental challenge has fundamental moral and ethical dimensions that cannot be ignored.</p>
+		<br>
+		<p>This Catholic Social Teaching states that me must be stewards of the earth. Water is the majority of the earth and is a vital element</p>
+		<p>to all forms of life. As Stewards of the earth we must take care of water, and activly work to not pollute and if not, then clean up water</p>
+		<p>pollution left behind by others.</p>
+	</div>
+</div>
+</body>		
+</html>
